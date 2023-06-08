@@ -1,0 +1,100 @@
+{% if mandatoryClauses is defined %}    numberOfCompensations -> {Integer@31997} 35
+    {% for mc in mandatoryClauses if mc.clauseName == “Limite máximo de Indenização”%}
+        {{mc.jsonDynamicFormValue.numberOfCompensations}}
+    {% endfor %}
+{% endif %}
+
+
+{%if cancelacion == false%}
+    {% if mandatoryClauses is defined %}    minimumPremium -> {Integer@31982} 738000
+        {% for mc in mandatoryClauses if mc.clauseName == “Prêmio Mínimo” %}
+            {% set _minimumPremium = "{:,.2f}".format(mc.jsonDynamicFormValue.minimumPremium) %}
+            {% set _minimumPremium1 = _minimumPremium | replace(".", "*") %}
+            {% set _minimumPremium2 = _minimumPremium1 | replace(",", ".") %}
+            {% set _minimumPremium3 = _minimumPremium2 | replace("*", ",") %}{{_minimumPremium3}}
+        {% endfor %}
+    {% endif %}
+{%else%}
+    0,00
+{%endif%}
+
+
+ {% if mandatoryClauses is defined %}   turnover -> {Integer@26200} 82000000
+    {% for mc in mandatoryClauses if mc.clauseName == “Valor Segurado Anual” %}
+        {% set _insuredAmount = "{:,.2f}".format(mc.jsonDynamicFormValue.turnover) %}
+        {% set _insuredAmount1 = _insuredAmount | replace(".", "*") %}
+        {% set _insuredAmount2 = _insuredAmount1 | replace(",", ".") %}
+        {% set _insuredAmount3 = _insuredAmount2 | replace("*", ",") %}
+        {{_insuredAmount3}}
+    {% endfor %}
+{% endif %}
+
+
+
+{%if cancelacion == false%}
+    {% if mandatoryClauses is defined %}
+        {% for mc in mandatoryClauses if mc.clauseName == “Prêmio Mínimo” %}
+            {% set _minimumPremium = mc.jsonDynamicFormValue.minimumPremium %}
+        {% endfor %}
+        {% for mc in mandatoryClauses if mc.clauseName == “Limite máximo de Indenização”%}
+            {% set _numberOfCompensations = mc.jsonDynamicFormValue.numberOfCompensations %}
+        {% endfor %}
+        {% set _maxAmount = "{:,.2f}".format(_minimumPremium * _numberOfCompensations) %}
+        {% set _maxAmount1 = _maxAmount | replace(".", "*") %}
+        {% set _maxAmount2 = _maxAmount1 | replace(",", ".") %}
+        {% set _maxAmount3 = _maxAmount2 | replace("*", ",") %}
+        {{_maxAmount3}}
+    {% endif %}
+{%else%}
+    0,00
+{%endif%}
+
+{%if cancelacion == false%}
+    {% if mandatoryClauses is defined %}
+        {% for mc in mandatoryClauses if mc.clauseName == “Prêmio Mínimo” %}
+            {% set _minimumPremium = mc.jsonDynamicFormValue.minimumPremium %}
+        {% endfor %}
+        {% for mc in mandatoryClauses if mc.clauseName == “Limite máximo de Indenização”%}
+            {% set _numberOfCompensations = mc.jsonDynamicFormValue.numberOfCompensations %}
+        {% endfor %}
+        {% set _maxAmount = _minimumPremium * _numberOfCompensations %}
+        {{_maxAmount}}
+    {% endif %}
+{%else%}
+    0,00
+{%endif%}
+
+
+{%if cancelacion == false%}
+    {% if mandatoryClauses is defined %}
+        {% for mc in mandatoryClauses if mc.clauseName == "Prêmio Mínimo" %}
+            {% set _minimumPremium = mc.jsonDynamicFormValue.minimumPremium %}
+        {% endfor %}
+        {% for mc in mandatoryClauses if mc.clauseName == "Limite máximo de Indenização"%}
+            {% set _numberOfCompensations = mc.jsonDynamicFormValue.numberOfCompensations %}
+        {% endfor %}
+        {% if _minimumPremium is defined %}
+            {% set _maxAmount = _minimumPremium * _numberOfCompensations %}
+            {{_maxAmount}}
+        {% endif %}
+    {% endif %}
+{%else%}
+    0,00
+{%endif%}
+
+{%if cancelacion == false%}
+    {% if mandatoryClauses is defined %}
+        {% for mc in mandatoryClauses if mc.clauseName == "Prêmio Mínimo" %}
+            {% set _minimumPremium = mc.jsonDynamicFormValue.minimumPremium %}
+            {% for mc in mandatoryClauses if mc.clauseName == "Limite máximo de Indenização"%}
+                {% set _numberOfCompensations = mc.jsonDynamicFormValue.numberOfCompensations %}
+                {% set _maxAmount = _minimumPremium * _numberOfCompensations %}
+                {{_maxAmount}}
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+{%else%}
+    0,00
+{%endif%}
+
+{%if cancelacion == false%}{% if mandatoryClauses is defined %}{% for mc in mandatoryClauses if mc.clauseName == "Prêmio Mínimo" %}{% set _minimumPremium = mc.jsonDynamicFormValue.minimumPremium %}{% for mc in mandatoryClauses if mc.clauseName == "Limite máximo de Indenização"%}{% set _numberOfCompensations = mc.jsonDynamicFormValue.numberOfCompensations %}{% set _maxAmount = "{:,.2f}".format(_minimumPremium * _numberOfCompensations) %}{% set _maxAmount1 = _maxAmount | replace(".", "*") %}{% set _maxAmount2 = _maxAmount1 | replace(",", ".") %}{% set _maxAmount3 = _maxAmount2 | replace("*", ",") %}{{_maxAmount3}}{% endfor %}{% endfor %}{% endif %}{%else%}0,00{%endif%}

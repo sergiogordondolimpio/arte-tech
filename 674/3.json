@@ -1,0 +1,255 @@
+{
+"mandatoryClauses": [
+    {
+        "policyClauseParameterId": 188040,
+        "policyId": 18034,
+        "clauseId": 37,
+        "clauseName": "Valor Inválido",
+        "translatedClauseName": "Valor Inválido",
+        "processedClauseName": "Material segurado",
+        "jsonDynamicFormValueStr": "{}",
+        "processedTemplate": "Fabricação de aparelhos de recepção, reprodução, gravação e amplificação de áudio e vídeo",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {},
+        "dynamicFormName": null
+    },
+    {
+        "policyClauseParameterId": 188034,
+        "policyId": 18034,
+        "clauseId": 31,
+        "clauseName": "Valor Inválido",
+        "translatedClauseName": "Valor Inválido",
+        "processedClauseName": "Prazo máximo de crédito",
+        "jsonDynamicFormValueStr": "{\"billOfLading\":false,\"maximumBillingTerm\":120}",
+        "processedTemplate": "1 a 120 dias.",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "maximumBillingTerm": 120,
+            "billOfLading": false
+        },
+        "dynamicFormName": "COND_PART_MAXIMUM_BILLING_TERM"
+    },
+    {
+        "policyClauseParameterId": 188028,
+        "policyId": 18034,
+        "clauseId": 25,
+        "clauseName": "Valor Segurado Anual",
+        "translatedClauseName": "Valor Segurado Anual",
+        "processedClauseName": "Valor Segurado Anual",
+        "jsonDynamicFormValueStr": "{\"turnover\":22500000}",
+        "processedTemplate": "R$ 22.500.000 (Inclui IOF)",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "turnover": 22500000
+        },
+        "dynamicFormName": "COND_PART_TURNOVER"
+    },
+    {
+        "policyClauseParameterId": 188031,
+        "policyId": 18034,
+        "clauseId": 28,
+        "clauseName": "Cobertura",
+        "translatedClauseName": "Cobertura",
+        "processedClauseName": "Cobertura",
+        "jsonDynamicFormValueStr": "{\"nominatedCoverage\":90,\"unnamedCoverage\":0}",
+        "processedTemplate": "90% Clientes Nomeados.",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "unnamedCoverage": 0,
+            "nominatedCoverage": 90
+        },
+        "dynamicFormName": "COND_PART_COVERAGE"
+    },
+    {
+        "policyClauseParameterId": 188029,
+        "policyId": 18034,
+        "clauseId": 26,
+        "clauseName": "Taxa Prêmio",
+        "translatedClauseName": "Taxa Prêmio",
+        "processedClauseName": "Taxa Prêmio",
+        "jsonDynamicFormValueStr": "{\"businessRateUnnamed\":0,\"businessRate\":0.9}",
+        "processedTemplate": "0,9% + IOF em vendas garantidas.",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "businessRate": 0.9,
+            "businessRateUnnamed": 0
+        },
+        "dynamicFormName": "COND_PART_BUSINESS_RATE"
+    },
+    {
+        "policyClauseParameterId": 188036,
+        "policyId": 18034,
+        "clauseId": 33,
+        "clauseName": "Clientes Nomeados",
+        "translatedClauseName": "Clientes Nomeados",
+        "processedClauseName": "Clientes Nomeados",
+        "jsonDynamicFormValueStr": "{\"nominatedMinimumAmount\":10000}",
+        "processedTemplate": "Clientes com crédito superior a R$ 10.000",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "nominatedMinimumAmount": 10000
+        },
+        "dynamicFormName": "COND_PART_NOMINATED_AMOUNT"
+    },
+    {
+        "policyClauseParameterId": 188027,
+        "policyId": 18034,
+        "clauseId": 24,
+        "clauseName": "Forma de Pagamento",
+        "translatedClauseName": "Forma de Pagamento",
+        "processedClauseName": "Forma de Pagamento",
+        "jsonDynamicFormValueStr": "{\"primalPaymentMethod\":\"TRIMESTRAL_VARIABLE\",\"premiumAdjustment\":true}",
+        "processedTemplate": "Trimestral Variavel, con Ajuste de Prêmio ao final de cada anualidade.",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "premiumAdjustment": true,
+            "primalPaymentMethod": "TRIMESTRAL_VARIABLE"
+        },
+        "dynamicFormName": "COND_PART_PRIMAL_PAYMENT_METHOD"
+    },
+    {
+        "policyClauseParameterId": 188035,
+        "policyId": 18034,
+        "clauseId": 32,
+        "clauseName": "Prêmio Mínimo",
+        "translatedClauseName": "Prêmio Mínimo",
+        "processedClauseName": "Prêmio Mínimo",
+        "jsonDynamicFormValueStr": "{\"minimumPremiumVariation\":1,\"minimumPremium\":202500,\"minimumPremiumPeriod\":\"12 meses\"}",
+        "processedTemplate": "R$ 202.500 + IOF 12 meses ",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "minimumPremiumVariation": 1,
+            "minimumPremium": 202500,
+            "minimumPremiumPeriod": "12 meses"
+        },
+        "dynamicFormName": "COND_PART_MINIMUM_PREMIUM"
+    },
+    {
+        "policyClauseParameterId": 188032,
+        "policyId": 18034,
+        "clauseId": 29,
+        "clauseName": "Limite máximo de Indenização",
+        "translatedClauseName": "Limite máximo de Indenização",
+        "processedClauseName": "Limite máximo de Indenização",
+        "jsonDynamicFormValueStr": "{\"numberOfCompensations\":35}",
+        "processedTemplate": "35 vezes o prêmio anual de risco acumulado ou o prêmio mínimo, o que for mais favorável para o Segurado.",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "numberOfCompensations": 35
+        },
+        "dynamicFormName": "COND_PART_NUMBER_OF_COMPENSATIONS"
+    },
+    {
+        "policyClauseParameterId": 188042,
+        "policyId": 18034,
+        "clauseId": 39,
+        "clauseName": "Custos de estudo nominado",
+        "translatedClauseName": "Custos de estudo nominado",
+        "processedClauseName": "Custos de estudo nominado",
+        "jsonDynamicFormValueStr": "{\"nominatedInitialCostEvalued\":\"0\",\"nominatedMaintenanceCost\":\"0\",\"baseCharge\":\"0\",\"nominatedMaintenanceCostEvalued\":\"0\",\"nominatedInitialCostExport\":\"0\",\"nominatedInitialCostEvaluedExport\":\"0\",\"nominatedMaintenanceCostExport\":\"0\",\"nominatedMaintenanceCostEvaluedExport\":\"0\",\"studyCostBillingFrequency\":\"UNICO POR DEUDOR\",\"nominatedInitialCost\":250}",
+        "processedTemplate": "R$ 250 parar cada novo comprador nominado aprovado. Será cobrado gastos de estudos por manutenção de um devedor com frequencia Único por devedor.",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "nominatedMaintenanceCostEvaluedExport": "0",
+            "nominatedInitialCost": 250,
+            "nominatedInitialCostEvalued": "0",
+            "nominatedMaintenanceCost": "0",
+            "baseCharge": "0",
+            "nominatedInitialCostEvaluedExport": "0",
+            "nominatedMaintenanceCostEvalued": "0",
+            "nominatedInitialCostExport": "0",
+            "studyCostBillingFrequency": "UNICO POR DEUDOR",
+            "nominatedMaintenanceCostExport": "0"
+        },
+        "dynamicFormName": "COND_PART_STUDY_COST_NOMINATED_EXPORT"
+    },
+    {
+        "policyClauseParameterId": 188039,
+        "policyId": 18034,
+        "clauseId": 36,
+        "clauseName": "Valor mínimo Indenizável",
+        "translatedClauseName": "Valor mínimo Indenizável",
+        "processedClauseName": "Valor mínimo Indenizável",
+        "jsonDynamicFormValueStr": "{\"sinisterThreshold\":10000}",
+        "processedTemplate": "R$ 10.000.-",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "sinisterThreshold": 10000
+        },
+        "dynamicFormName": "COND_PART_SINISTER_THRESHOLD"
+    },
+    {
+        "policyClauseParameterId": 188043,
+        "policyId": 18034,
+        "clauseId": 40,
+        "clauseName": "Prazo de Declaração de Venda",
+        "translatedClauseName": "Prazo de Declaração de Venda",
+        "processedClauseName": "Prazo de Declaração de Venda",
+        "jsonDynamicFormValueStr": "{\"termOfSaleDeclaration\":\"MENSUAL\"}",
+        "processedTemplate": "Mensal.",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "termOfSaleDeclaration": "MENSUAL"
+        },
+        "dynamicFormName": "COND_PART_TERM_OF_SALE_DECLARATION"
+    },
+    {
+        "policyClauseParameterId": 188033,
+        "policyId": 18034,
+        "clauseId": 30,
+        "clauseName": "Prazo para o pagamento da Indenização",
+        "translatedClauseName": "Prazo para o pagamento da Indenização",
+        "processedClauseName": "Prazo para o pagamento da Indenização",
+        "jsonDynamicFormValueStr": "{\"daysSinisterExecution\":120}",
+        "processedTemplate": "120 dias a partir da data do Aviso de Inadimplemento",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "daysSinisterExecution": 120
+        },
+        "dynamicFormName": "COND_PART_DAYS_SINISTER_EXECUTION"
+    },
+    {
+        "policyClauseParameterId": 188038,
+        "policyId": 18034,
+        "clauseId": 35,
+        "clauseName": "Prazo Comunicação Falta de Pagamento",
+        "translatedClauseName": "Prazo Comunicação Falta de Pagamento",
+        "processedClauseName": "Prazo Comunicação Falta de Pagamento",
+        "jsonDynamicFormValueStr": "{\"ownManagements\":60}",
+        "processedTemplate": "60 dias contados a partir da data de vencimento original das faturas",
+        "processedCurrentTemplate": null,
+        "showInDocument": true,
+        "showInDocumentEvaluated": true,
+        "jsonDynamicFormValue": {
+            "ownManagements": 60
+        },
+        "dynamicFormName": "COND_PART_OWN_MANAGEMENTS"
+    }
+]
+}

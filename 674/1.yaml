@@ -1,0 +1,10 @@
+mandatoryClauses:
+  - clauseName: Prêmio Mínimo
+    jsonDynamicFormValue:
+      minimumPremiumVariation: 1
+      minimumPremium: 202500
+      minimumPremiumPeriod: 12 meses
+  - clauseName: Limite máximo de Indenização
+    showInDocumentEvaluated: true
+    jsonDynamicFormValue:
+      numberOfCompensations: 35
